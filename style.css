@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700;8..60,800;8..60,900&display=swap');
+
+* {
+     padding: 0;
+     margin: 0;
+}
+
+::-webkit-scrollbar {
+     width: 11px;
+}
+
+::-webkit-scrollbar-track {
+     background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+     background: #0EB582;
+     border-radius: 50px;
+}
+
+::-moz-selection {
+     color: white;
+     background: #0EB582;
+}
+
+::selection {
+     color: white;
+     background: #0EB582;
+}
+
+body {
+     font-family: 'Source Serif 4', serif !important;
+}
+
+.container {
+     width: 1150px;
+     margin: 0 auto;
+}
+
+.top-bar {
+     background-color: #008000;
+     color: white;
+     display: flex;
+     align-items: center;
+     padding: 0.6rem 2rem;
+     font-size: 14px;
+}
+
+.top-bar i {
+     font-size: 0.8em;
+}
+
+.top-bar .info {
+     margin-left: 2.5rem;
+}
+
+.nav-wrapper {
+     background-color: #0EB582;
+     padding: 0.5rem;
+}
+
+nav {
+     width: 85%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+nav img {
+     width: 30px;
+}
+
+nav a {
+     font-size: 18.5px;
+     font-weight: 600;
+     color: white;
+     text-decoration: none;
+     margin: 0 0.8rem;
+}
+
+nav a:hover {
+     color: black;
+}
+
+.home-container {
+     position: relative;
+     margin-bottom: 8%;
+}
+
+.home-wrapper {
+     background-image: url('images/heading-bg.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height: 550px;
+     padding-top: 1.3rem;
+     display: flex;
+     align-items: center;
+}
+
+.home {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 1rem;
+     padding: 2rem 1rem;
+}
+
+.video-wrapper {
+     display: flex;
+     align-items: center;
+}
+
+.video-wrapper video {
+     border: none;
+     border-radius: 15px;
+}
+
+.motto {
+     display: flex;
+     align-items: center;
+     font-size: 1.2em;
+     font-weight: 600;
+     margin-bottom: 2rem;
+}
+
+.home h1 {
+     font-size: 3em;
+     color: #28a745;
+     margin-bottom: 0.7rem;
+}
+
+.btn {
+     border: 1px solid #28a745;
+     color: #28a745;
+     padding: 0.8rem 1.6rem;
+     font-size: 17px;
+     font-weight: 500;
+     background-color: transparent;
+     cursor: pointer;
+     margin: 1.3rem 2rem 1.7rem 0;
+     border-radius: 5px;
+}
+
+.btn:hover,
+.card:hover,
+.join-btn:hover {
+     background-color: #0EB582;
+     color: white;
+}
+
+.certificate {
+     display: flex;
+     align-items: center;
+     font-weight: 600;
+}
+
+.certificate img {
+     width: 80px;
+}
+
+.card-container {
+     width: 100%;
+     position: absolute;
+     bottom: -80px;
+     transform: translateX(50%, 50%);
+}
+
+.card-wrapper {
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     grid-gap: 0.6rem;
+     width: 80%;
+     margin: 0 auto;
+}
+
+.card-wrapper a {
+     text-decoration: none;
+     color: black;
+}
+
+.card {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 1rem 0;
+     font-size: 18px;
+     font-weight: 600;
+     border: 0.8px solid #0EB582;
+     border-radius: 1rem;
+     background-color: #f0fdfa;
+     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.card i {
+     font-size: 2.4em;
+     color: #0EB582;
+     margin-bottom: 10px;
+}
+
+.card:hover i {
+     color: white;
+}
+
+.popular-courses-container {
+     background-color: #FAF9F9;
+     padding: 2rem 2rem 4rem;
+}
+
+.courses-heading {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 2rem 0;
+}
+
+.courses-heading p {
+     margin-bottom: 1rem;
+}
+
+.courses-heading nav {
+     width: 80%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 1rem 0 1.2rem;
+}
+
+.courses-heading nav a {
+     color: black;
+     text-decoration: none;
+     margin: 0 1rem;
+}
+
+.courses-heading nav a:hover {
+     color: #0EB582;
+}
+
+.courses-heading hr {
+     border: 0;
+     clear: both;
+     display: block;
+     width: 80%;
+     background-color: #e5e2e2;
+     height: 1px;
+}
+
+.courses-container {
+     width: 83%;
+     margin: 0 auto;
+}
+
+.courses-wrapper,
+.footer-info-wrapper,
+.teams-wrapper {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 1rem;
+}
+
+.course-card {
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+}
+
+.course-card:hover img {
+     transform: scale(1.1);
+     border-radius: 10px 10px 0 0;
+}
+
+.course-card:hover {
+     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.course-card img {
+     width: 100%;
+     margin-bottom: -5px;
+     border-radius: 10px 10px 0 0;
+     height: 240px;
+     transition: transform .3s;
+}
+
+.card-description {
+     border: 1px solid #0EB582;
+     padding: 0 1rem 1.4rem;
+     border-radius: 0 0 10px 10px;
+}
+
+.card-description h2 {
+     font-size: 1.5em;
+     margin: 1rem 0;
+     text-align: center;
+     font-weight: 600;
+}
+
+.card-description hr,
+.footer-container hr {
+     border: 0;
+     width: 100%;
+     clear: both;
+     display: block;
+     background-color: #0EB582;
+     height: 1.5px;
+     margin: 1rem auto;
+}
+
+.description-wrapper {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-weight: 400;
+}
+
+.success-wrapper,
+.special-service-wrapper {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 2rem 0;
+     height: 300px;
+}
+
+.courses-heading h1,
+.success-wrapper h1,
+.special-service-wrapper h1,
+.comments-wrapper h1,
+.seminar-text h1,
+.association-container h1,
+.footer-container h1,
+.teams-container h1,
+.contact-container h1,
+.freelancing-container h1,
+.about-us-container h1 {
+     margin: 1rem 0;
+     font-size: 2.7em;
+     text-align: center;
+}
+
+.success-wrapper p,
+.special-service-wrapper p,
+.comments-wrapper p {
+     text-align: center;
+     width: 70%;
+     margin: 0 auto 1rem;
+}
+
+.comments-wrapper {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 2rem 0;
+     height: 500px;
+}
+
+.comments-wrapper .comments {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 1rem;
+     padding: 1rem;
+     margin: 1rem 0;
+}
+
+.comments-wrapper .comments .comment {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 1.5rem 0;
+     border-radius: 5px;
+     background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
+     background-position: center;
+     background-size: cover;
+     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.comments-wrapper .comments .comment .comment-img {
+     width: 25%;
+     display: flex;
+     justify-content: end;
+}
+
+.comments-wrapper .comments .comment .comment-img img {
+     width: 100px;
+     border-radius: 50%;
+}
+
+.comments-wrapper .comments .comment .comment-text {
+     width: 75%;
+     display: flex;
+     flex-direction: column;
+     padding: 0 1rem;
+}
+
+.comments-wrapper .comments .comment .comment-text h3 {
+     font-size: 1.3em;
+     margin: 10px 0 6px;
+}
+
+.comments-wrapper .comments .comment .comment-text p {
+     text-align: left;
+     width: 100%;
+     margin-bottom: 6px;
+     margin-right: 1rem;
+}
+
+.seminars-container {
+     width: 87%;
+     margin: 0 auto;
+     background-color: #E5FFF7;
+     border-radius: 10px;
+     padding: 1rem;
+}
+
+.seminar-wrapper {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 1rem;
+     padding: 1rem;
+}
+
+.seminar-text {
+     width: 90%;
+     margin-left: auto;
+     padding-right: 1rem;
+}
+
+.seminar-text h3 {
+     font-size: 1.4em;
+     margin: 1rem 0;
+}
+
+.seminar-card {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 1rem;
+     padding: 1rem 1.5rem;
+     border-left: 12px solid #008000;
+     border-radius: 8px;
+     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.seminar-card-text {
+     width: 90%;
+}
+
+.join-btn {
+     border: 1px solid #28a745;
+     border-radius: 50px;
+     color: #28a745;
+     padding: 0.3rem 1rem;
+     font-size: 15px;
+     font-weight: 600;
+     background-color: transparent;
+     cursor: pointer;
+}
+
+.seminar-img {
+     width: 85%;
+     margin-right: auto;
+     padding-left: 1.5rem;
+     display: flex;
+     align-items: center;
+}
+
+.seminar-img .class-img {
+     width: 500px;
+     border-radius: 15px;
+}
+
+.association-container {
+     width: 90%;
+     margin: 2rem auto;
+     text-align: center;
+     padding: 2rem 0;
+}
+
+.association-wrapper,
+.freelancing-card-wrapper {
+     width: 90%;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 1rem;
+     margin: 2rem auto;
+}
+
+.association-wrapper img {
+     width: 150px;
+     margin: 1rem auto;
+}
+
+.teams-container {
+     width: 90%;
+     margin: 0 auto;
+}
+
+.teams-wrapper .team {
+     position: relative;
+     width: 90%;
+     max-width: 300px;
+     margin: 1rem auto;
+}
+
+.teams-wrapper .team .image {
+     display: block;
+     width: 100%;
+     height: auto;
+}
+
+.teams-wrapper .team .title {
+     position: absolute;
+     bottom: 0;
+     background: #0EB582;
+     color: #f1f1f1;
+     width: 100%;
+     transition: .5s ease;
+     opacity: 0;
+     color: white;
+     font-size: 20px;
+     padding: 20px 0;
+     text-align: center;
+     font-weight: 600;
+}
+
+.team:hover .title {
+     opacity: 1;
+}
+
+.contact-info-wrapper {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 1rem;
+     margin-top: 2rem;
+}
+
+.contact-info-wrapper .contact-info, .statistics-wrapper .statistics {
+     border: 1px solid #0EB582;
+     padding: 1rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: #F0FDFA;
+     height: 130px;
+     border-radius: 8px;
+     text-align: center;
+}
+
+.contact-info-wrapper .contact-info i, .statistics-wrapper .statistics i {
+     font-size: 2rem;
+     color: #0EB582;
+     margin-bottom: 1rem;
+}
+
+.contact-info-wrapper .contact-info p {
+     font-size: 600;
+}
+
+.form-wrapper,
+.freelancing-info-wrapper {
+     margin: 4rem 0;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     padding: 2rem 0;
+}
+
+.form-wrapper form {
+     display: flex;
+     flex-direction: column;
+     width: 70%;
+     padding-left: 2rem;
+}
+
+.form-wrapper form input,
+textarea {
+     border: 1px solid #0EB582;
+     padding: 0.8rem 1rem;
+     margin-bottom: 1rem;
+     font-family: 'Source Serif 4', serif !important;
+     resize: none;
+}
+
+.form-wrapper form input:focus,
+textarea:focus {
+     outline: none;
+}
+
+.faqs-wrapper {
+     height: 100%;
+     margin: 1rem 0;
+     display: grid;
+     padding: 1rem;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 1.5rem;
+}
+
+.faqs-wrapper .faqs {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 1rem;
+}
+
+.faqs-wrapper .faqs details {
+     background-color: #FBFDF2;
+     color: #444;
+     cursor: pointer;
+     padding: 15px 22px;
+     width: 100%;
+     text-align: left;
+     border: none;
+     outline: none;
+     transition: 0.5s;
+     margin-bottom: 1rem;
+     border-radius: 15px;
+     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.faqs-wrapper .faqs summary {
+     font-size: 1.3em;
+     font-weight: 700;
+     color: #008000;
+}
+
+.freelance-card {
+     background-color: #DDFFD9;
+     border-radius: 8px;
+     display: flex;
+     align-items: center;
+}
+
+.freelance-card h3 {
+     margin-left: 1rem;
+     font-size: 1.3em;
+}
+
+.statistics-wrapper {
+     width: 100%;
+     margin: 5rem auto;
+     display: grid;
+     grid-template-columns: repeat(6, 1fr);
+     grid-gap: 1rem;
+}
+
+.statistics-wrapper .statistics h2{ 
+     font-size: 1.5em;
+}
+
+footer {
+     background-color: #F0FDFA;
+     height: 750px;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+     text-align: center;
+}
+
+.footer-container,
+.contact-container,
+.freelancing-container {
+     width: 80%;
+     margin: 0 auto;
+     padding: 1rem;
+}
+
+.footer-info-wrapper {
+     text-align: left;
+     margin-top: 1.5rem;
+}
+
+.footer-info-wrapper h3 {
+     font-weight: 500;
+     font-size: 1.4rem;
+}
+
+.footer-info-wrapper h4 {
+     font-weight: 500;
+     font-size: 1.1rem;
+     margin-top: 1rem;
+
+}
+
+.social-media-wrapper {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     margin: 2rem 0;
+}
+
+.social-media-wrapper a {
+     text-decoration: none;
+     color: white;
+     background-color: #0EB582;
+     padding: 10px 16px;
+     font-size: 18px;
+     margin-right: 10px;
+}
+
+.footer-info-wrapper .links-wrapper a {
+     text-decoration: none;
+     color: black;
+     display: block;
+     margin-bottom: 1.2rem;
+}
+
+.footer-info-wrapper .links-wrapper a:hover {
+     color: #0EB582;
+}
